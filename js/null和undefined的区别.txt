@@ -1,0 +1,5 @@
+1、作者在设计js时先设计的null(最初设计js的时候借鉴了java)
+2、null会被隐式转换为0，很不容易发现错误
+3、先有null后有undefined，undefined是为了填之前的坑
+具体区别:JavaScript最初的版本是这样区分的:null表示一个无的对象(空对象指针),转为数值为0
+        undefined是表示一个无的原始值，转换为数值为NaN

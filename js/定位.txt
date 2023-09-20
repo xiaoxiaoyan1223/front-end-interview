@@ -1,0 +1,9 @@
+--------------------垂直居中---------------------
+inline:line-height=height
+absoulte元素:top50% + margin-top负值(盒子的一半)
+            #以下两种方法可以不知道盒子的宽度#
+             top:50%;
+             left:50%;
+             transform(-50%,-50%)(该方法可能存在一些兼容性问题)
+
+             top,right,bottom,left=0+margin:auto

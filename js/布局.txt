@@ -1,0 +1,37 @@
+1/盒模型宽度计算
+offsetWidth(控件元素的实际宽度)=width + padding(包含左右内边距) + border(包含左右边框)，无外边距
+clientWidth(可视内容的宽度) = width + padding(包含左右内边距) 
+2/margin纵向重叠问题
+相邻元素的margin-top和margin-bottom会重叠
+空内容的p标签也会重叠
+3/margin负值问题
+·margin-top和margin-left负值,元素向上、向左移动
+·margin-right负值,右侧元素左移，自身不受影响
+例子：比如 a 元素和 b元素是左右的关系,a元素的右边是b元素,给a元素的margin-right设置-10px;自身不受
+影响,a元素里面的内容不受影响,但b元素会向左移动10px
+·如果margin-bottom负值,下方元素上移,自身不受影响
+例子：比如 a 元素和 b元素是上下的关系,a元素在上面,b元素在下面,给a元素的margin-bottom设置-10px;
+自身不受影响,a元素里面的内容不受影响,但b元素会向上移动10px
+4/BFC
+BFC是一块独立的布局环境,保护其中内部元素不收外部影响,也不影响外部。本身BFC是一种css的布局方式,只是
+我们可以利用它来解决外边距折叠的问题,BFC并不是专门用来解决这个问题而创的
+BFC解决的问题: (1)margin塌陷
+              (2)margin合并
+BFC产生条件:
+              (1).position:absolute;
+              (2).display:inline-block;
+              (3).float:left/right;
+              (4).overflow:hidden;
+5/圣杯布局和双飞翼布局
+圣杯布局和双飞翼布局是前端工程师需要日常掌握的重要布局方式。两者的功能相同，都是为了实现一个两侧宽度
+固定，中间宽度自适应的三栏布局。
+**特点： 两侧宽度固定，中间宽度自适应（三栏布局）
+        中间部分在DOM结构上有限,以便先行渲染
+        允许三列中的任意一列成为最高列
+        只需要使用一个额外的div标签
+6/手写clearfix(清除浮动)
+.clearfix:after {
+    content:'';
+    display:table;
+    clear:both;
+}   

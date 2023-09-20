@@ -1,0 +1,17 @@
+true的情况
+100=='100';
+0==false;
+0=='';
+false=='';
+null==undefined;
+
+除了==null的情况   其他判断相等都用===
+
+falsely变量
+!!0===false
+!!NaN===false
+!!''===false
+!!null===false
+!!undefined===false
+!!false===false
+除此之外都是truely变量

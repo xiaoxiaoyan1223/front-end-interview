@@ -1,0 +1,21 @@
+!!this取什么样的值 是在函数执行时确认的  不是在定义时!!
+const zhangsan={
+    name:'张三',
+    sayhi(){
+        //this即当前对象
+        console.log(this);
+    },
+    wait(){
+        setTimeout(function(){
+            //this==window   因为这是setTimeout自己触发的this 而不是张三调用的
+            console.log(this);
+        })
+    },
+    jt(){
+        setTimeout(()=>{
+            //this即当前对象  因为箭头函数的this取上级作用域的this
+            console.log(this);
+        })
+    }
+
+}
