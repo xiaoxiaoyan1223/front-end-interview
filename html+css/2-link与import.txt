@@ -1,0 +1,2 @@
+第一：link比import早，所以兼容性更好
+第二：先加载link，再加载import

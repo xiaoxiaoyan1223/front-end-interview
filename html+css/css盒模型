@@ -1,0 +1,4 @@
+标准盒子模型：margin border padding content
+IE盒子模型：margin content(padding+border+content)
+通过css转换盒子模型：
+box-sizing：border-box；IE盒子模型

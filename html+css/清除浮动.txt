@@ -1,0 +1,10 @@
+##########方法一:触发BFC###########
+给父元素添加一个overflow:hidden;
+##########方法二:多创建盒子###########
+在后面添加一个div盒子  div{clear:both;}
+##########方法三:after方式###########(最常用)
+父元素:after{
+    content:'';
+    display:block;
+    clear:both;
+}
