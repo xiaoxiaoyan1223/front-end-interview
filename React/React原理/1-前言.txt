@@ -1,0 +1,19 @@
+#函数式编程
+一种编程范式概念比较多
+纯函数
+不可变值
+#vdom和diff
+
+#JSX本质
+JSX等同于Vue模板
+Vue模板不是html
+JSX也不是JS
+#合成事件
+所有事件都挂载到document上
+event不是原生的，是SyntheticEvent合成事件对象
+和vue dom事件都不同
+#setState batchUpdate
+
+#组件渲染过程
+
+#前端路由

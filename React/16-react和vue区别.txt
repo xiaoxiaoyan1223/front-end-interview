@@ -1,0 +1,7 @@
+#相同点
+都支持组件化
+都是数据驱动视图
+都使用vdom操作dom
+#不同点
+React使用JSX拥抱js Vue使用模板拥抱html
+React函数式编程 Vue声明式编程
