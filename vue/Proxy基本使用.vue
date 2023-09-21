@@ -1,0 +1,20 @@
+<template>
+    <div>
+        <p>
+            #回顾Object.defineProperty的缺点
+            深度监听需要一次递归
+            无法监听新增属性、删除属性
+            无法原生监听数组，需要特殊处理
+        </p>
+        <p>
+            #proxy实现响应式
+        
+        </p>
+        <p>
+            #Reflect作用
+            和Proxy能力一一对应
+            规范化、标准化、函数式
+            替代掉Object上的工具函数
+        </p>
+    </div>
+</template>

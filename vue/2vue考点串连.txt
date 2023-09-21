@@ -1,0 +1,29 @@
+#基本使用，组件使用---常用必须会
+
+#高级特性————不常用，但能体现学习的深度
+
+#vuex和vue-router的使用
+
+computed有缓存,data不变则不会重新计算,缓存可以提高运算的性能
+
+watch监听引用类型，拿不到oldVal，值类型可以正常拿到
+
+class和style：使用动态属性；使用驼峰写法
+
+循环列表渲染  可以用v-for遍历对象
+             key要有但key不能乱写，不能用随机数或者index
+             v-for和v-if是不可以一起使用的
+事件：event参数，自定义参数  MouseEvent是原生的event对象，没有经过任何的装饰
+      事件修饰符和按键修饰符
+          .stop  .prevent  .capture   .self
+          .ctrl .exact
+          修饰符可以串连，即多个修饰符可以连用
+      事件被绑定到哪里
+表单：v-model
+     常见的表单项textarea checkbox radio  select
+     修饰符lazy number trim
+vue组件的使用
+
+组件间的通讯——自定义事件：props和$emit
+
+组件生命周期

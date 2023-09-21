@@ -1,0 +1,55 @@
+#v-show和v-if的区别
+v-show通过css display控制显示和隐藏
+v-if是组件真正的渲染和销毁，而不是显示隐藏
+频繁切换时用v-show 否则用v-if
+
+#为何在v-for中用key
+必须用key 且不能是index和random
+diff算法中通过tag和key来判断，是否是sameNode
+减少渲染次数提高渲染性能
+
+#描述Vue组件生命周期
+单组件生命周期图
+父子组件生命周期关系
+注意要生成闭环，及时销毁
+
+#vue组件如何通信
+父子组件props和this.$emit
+自定义事件event.$on event.$off event.$emit
+vuex
+
+#双向数据绑定v-mode的实现原理
+input元素的value=this.name
+会绑定input事件 this.name=$event.target.value   每次都会把输入的内容赋值给this.name
+data更新触发re-render
+
+#对MVVM的理解
+根据图
+
+#computed有什么特点
+缓存，data不变不会重新计算
+提高性能
+
+#为何组件data必须是一个函数
+.vue文件编译后实际上是对象 如果data不是函数那么里面的数据就会共享了
+
+#ajax应该放在哪个生命周期
+mounted
+js是单线程，ajax异步获取数据
+放在mounted之前只会让逻辑更加乱
+
+#如何将组件所有的props传递给子组件
+$props
+<User v-bind="$props"/>
+细节知识点优先级不高
+
+#何时要使用异步组件
+加载大组件
+路由异步加载
+
+#何时使用keep-alive
+缓存组件不需要重新渲染
+多个静态tab切换
+优化性能
+
+

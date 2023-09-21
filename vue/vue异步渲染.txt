@@ -1,0 +1,4 @@
+方法一:原有模板语法，挂载渲染
+方法二:使用render属性，createElement函数直接渲染
+方法三:使用render属性，配合组件的template属性，createElement函数渲染
+方法四:使用render属性，配合单文件组件，createElement函数渲染

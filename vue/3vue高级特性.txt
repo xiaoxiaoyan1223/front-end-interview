@@ -1,0 +1,15 @@
+# 自定义v-model
+
+# $nextTick
+ ·异步渲染，$nextTick函数待DOM渲染完后再回调
+ ·页面渲染时会将data的修改做整合，多次data修改只会渲染一次
+  指定的内容会在dom节点更新后再执行
+# slot
+
+#动态异步组件
+
+# mixin
+
+#keep-alive
+
+#refs

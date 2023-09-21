@@ -1,0 +1,6 @@
+#MVVM: model view viewmodel
+根据数据重新渲染视图
+概念：
+
+对比之前的组件化：asp jsp php已经有组件化了  nodejs中也有类似的组件化
+传统组件只是静态渲染，更新还要依赖于操作DOM

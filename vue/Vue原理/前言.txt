@@ -1,0 +1,26 @@
+#组件化
+
+#响应式
+
+#vdom和diff
+
+#模板编译
+模板不是html，有指令、插值、js表达式，能实现判断循环
+前置知识：js的with语法
+vue template complier 将模板编译为render函数
+执行render函数生成vnode
+
+with语法：改变{}内自由变量的查找规则，当做obj属性来查找
+          如果找不到匹配的obj就会报错
+          with要慎用，它打破了作用域规则，易读性变差
+
+#渲染过程
+1.解析模板为render函数(或者在开发环境中已经完成，vue-loader)
+2.触发响应式，监听data属性getter和setter
+3.执行render函数，生成vnode，pacth
+patch(vnode,newVnode)
+
+#前端路由
+
+
+@描述组件更新和渲染的过程(开放式题目，主要要求全面)
