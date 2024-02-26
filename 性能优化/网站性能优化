@@ -1,0 +1,25 @@
+如何进⾏⽹站性能优化
+1、content ⽅⾯
+减少 HTTP 请求：合并⽂件、 CSS 精灵、 inline Image
+减少 DNS 查询： DNS 缓存、将资源分布到恰当数量的主机名
+减少 DOM 元素数量
+2、Server ⽅⾯
+使⽤ CDN
+配置 ETag
+对组件使⽤ Gzip 压缩
+3、Cookie ⽅⾯
+减⼩ cookie ⼤⼩
+4、css ⽅⾯
+将样式表放到⻚⾯顶部
+不使⽤ CSS 表达式
+使⽤ <link> 不使⽤ @import
+5、Javascript ⽅⾯
+将脚本放到⻚⾯底部
+将 javascript 和 css 从外部引⼊
+压缩 javascript 和 css
+删除不需要的脚本
+减少 DOM 访问
+6、图⽚⽅⾯
+优化图⽚：根据实际颜⾊需要选择⾊深、压缩
+优化 css 精灵
+不要在 HTML 中拉伸图⽚
