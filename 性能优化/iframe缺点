@@ -1,0 +1,4 @@
+1、iframe 会阻塞主⻚⾯的 Onload 事件
+2、搜索引擎的检索程序⽆法解读这种⻚⾯，不利于 SEO
+reason：iframe 和主⻚⾯共享连接池，⽽浏览器对相同域的连接有限制，所以会影响⻚⾯的并⾏加载
+how：使⽤ iframe 之前需要考虑这两个缺点。如果需要使⽤ iframe ，最好是通过javascript 动态给 iframe 添加 src 属性值，这样可以绕开以上两个问题
