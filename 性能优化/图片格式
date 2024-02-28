@@ -1,0 +1,6 @@
+知道的⽹⻚制作会⽤到的图⽚格式有哪些？
+png-8 、 png-24 、 jpeg 、 gif、svg、Webp、Apng
+Webp： WebP 格式，⾕歌开发的⼀种旨在加快图⽚加载速度的图⽚格式。图⽚压缩体积⼤约只有 JPEG 的 2/3 ，并能节省⼤量的服务器带宽资源和数据空间。
+Facebook Ebay 等知名⽹站已经开始测试并使⽤ WebP 格式。在质量相同的情况下，WebP格式图像的体积要⽐JPEG格式图像⼩ 40% 。
+Apng：全称是 “Animated Portable Network Graphics” , 是PNG的位图动画扩展，可以实现png格式的动态图⽚效果。04年诞⽣，但⼀直得不到各⼤浏览器⼚商的⽀持，直到
+⽇前得到 iOS safari 8 的⽀持，有望代替 GIF 成为下⼀代动态图标准
