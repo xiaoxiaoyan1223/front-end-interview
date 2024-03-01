@@ -1,0 +1,30 @@
+/**css**/
+.ani{
+width:480px;
+height:320px;
+margin:50px auto;
+overflow: hidden;
+box-shadow:0 0 5px rgba(0,0,0,1);
+background-size: cover;
+background-position: center;
+-webkit-animation-name: "loops";
+-webkit-animation-duration: 20s;
+-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes "loops" {
+0% {
+background:url(http://d.hiphotos.baidu.com/image/w%3D400/sign=c01e6
+}
+25% {
+background:url(http://b.hiphotos.baidu.com/image/w%3D400/sign=edee1
+}
+50% {
+background:url(http://b.hiphotos.baidu.com/image/w%3D400/sign=937da
+}
+75% {
+background:url(http://g.hiphotos.baidu.com/image/w%3D400/sign=7d375
+}
+100% {
+background:url(http://c.hiphotos.baidu.com/image/w%3D400/sign=cfb23
+}
+}
