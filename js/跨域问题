@@ -1,0 +1,17 @@
+跨域问题
+同源策略是一种约定，是浏览器最基本最核心的安全功能，如果缺少同源策略，那么浏览器很容易受到xss，csfr攻击。同源即指“协议+域名+端口”三者相同，
+就算两个不同的域名指向同一个ip，也非同源
+解决方案：
+·通过jsonp跨域
+var script = document.createElement('script');
+script.type = 'text/javascript';
+// 传参并指定回调执⾏函数为onBack
+script.src = 'http://www.....:8080/login?user=admin&callback=onBack';
+document.head.appendChild(script)
+// 回调执⾏函数
+function onBack(res) {
+alert(JSON.stringify(res));
+}
+·nginx代理跨域
+·nodejs中间件代理跨域
+·后端在头部信息⾥⾯设置安全域名
