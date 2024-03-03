@@ -1,0 +1,23 @@
+说说你对promise的了解
+Promise 有四种状态：
+pending: 初始状态, ⾮ fulfilled 或 rejected.
+fulfilled: 成功的操作.
+rejected: 失败的操作.
+settled: Promise 已被 fulfilled 或 rejected ，且不是 pending
+另外， fulfilled 与 rejected ⼀起合称 settled
+Promise 对象⽤来进⾏延迟( deferred ) 和异步( asynchronous ) 计算
+构造⼀个 Promise ，最基本的⽤法如下：
+body,ul,li,ol,dl,dt,dd,form,input,h1,h2,h3,h4,h5,h6,p{
+margin:0;
+padding:0;
+}
+var promise = new Promise(function(resolve, reject) {
+cs
+if (...) { // succeed
+resolve(result);
+} else {
+// fails
+reject(Error(errMessage));
+}
+});
+Promise 实例拥有 then ⽅法（具有 then ⽅法的对象，通常被称为 thenable ）
