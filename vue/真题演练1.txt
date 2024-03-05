@@ -18,13 +18,17 @@ diff算法中通过tag和key来判断，是否是sameNode
 自定义事件event.$on event.$off event.$emit
 vuex
 
-#双向数据绑定v-mode的实现原理
+#双向数据绑定v-model的实现原理
 input元素的value=this.name
 会绑定input事件 this.name=$event.target.value   每次都会把输入的内容赋值给this.name
 data更新触发re-render
 
 #对MVVM的理解
-根据图
+model：数据和业务逻辑
+view：用户界面的可视部分
+modelview：视图模型是连接视图和模型的纽带。它负责将模型中的数据转换为视图可用的形式，并将用户操作转换为对模型的操作。
+建立视图与模式的连接
+数据驱动视图
 
 #computed有什么特点
 缓存，data不变不会重新计算
@@ -52,4 +56,29 @@ $props
 多个静态tab切换
 优化性能
 
+#vue路由模式有几种
+·Hash模式：vue router默认的路由模式，在这种模式下，url中会带有#，当url发生改变后，页面不会重新加载，
+而是通过监听url变化来切换视图，不会向服务器发送请求
+·History模式：使用HTML5 History API来实现路由，去掉了url中的#，需要服务器配置以支持前端路由
+·Abstract模式：用于非浏览器模式，比如测试环境中，通过内存中的路由进行导航
 
+#vue中组件通信的方式
+·Props / Events（父子组件通信）：父组件通过props向子组件传递数据，子组件通过$emit向父组件传递数据
+·子组件间通信：子组件通过事件总线或vuex来触发和监听事件
+·全局状态管理：通过vuex中store中的state、getters、mutations和actions来实现组件之间的状态共享和通信
+·$refs访问子组件事例，从而调用子组件的方法和访问子组件的数据
+·slot插槽：使用这些插槽可以实现父组件向子组件传递内容
+
+#vue生命周期
+·创建阶段 
+   beforeCreated
+   created：实例已经创建完成，可以访问 data、computed 和 methods，但 DOM 元素尚未生成。
+·挂载阶段
+   beforeMount：在挂载开始之前被调用，相关的 render 函数首次被调用。
+   mounted：el 被新创建的 vm.$el 替换，并挂载到实例上之后调用该钩子。
+·更新阶段
+   beforeUpdate
+   updated：由于数据更改导致的虚拟 DOM 重新渲染和打补丁后调用。
+·销毁阶段
+   beforeDestory
+   destoryed
