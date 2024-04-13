@@ -1,0 +1,37 @@
+#cookie的用途
+主要存储用户信息，用于身份验证和状态管理。
+#cookie的创建
+createCookie(name,value,expires,path,domain,secure)
+#cookie的删除
+deleteCookie(name,path,domain)
+#cookie的修改
+setCookie(name,value,path,domain)
+#cookie的存储
+storeCookie(name,value,expires,path,domain,secure)
+#cookie的发送
+sendCookie(name,value,path,domain)
+#cookie的接收
+receiveCookie(name,value,path,domain)
+#cookie的属性
+name:cookie的名称
+value:cookie的值
+expires:cookie的过期时间
+path:cookie的路径
+domain:cookie的域名
+secure:cookie的安全属性
+HttpOnly:cookie的HttpOnly属性 如果设置HttpOnly属性为true，则浏览器不会将cookie信息包含在HTTP请求中，从而防止XSS攻击。
+Secure:cookie的Secure属性, 如果设置Secure属性为true，则cookie只能通过HTTPS协议发送，从而确保数据的安全性。
+Persistent:cookie的Persistent属性
+#cookie的过期时间
+max-age:cookie的过期时间，单位为秒
+expires:cookie的过期时间，格式为"YYYY-MM-DD HH:MM:SS"
+#cookie的路径
+path:cookie的路径，用于指定cookie在哪些页面中有效
+#cookie的域名
+domain:cookie的域名，用于指定cookie在哪些域名下有效
+#cookie的安全属性
+secure:cookie的安全属性，用于指定cookie只能通过HTTPS协议发送
+
+
+
+

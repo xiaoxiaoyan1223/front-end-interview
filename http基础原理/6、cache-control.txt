@@ -1,0 +1,43 @@
+#cache-control的取值及含义
+
+no-cache
+
+客户端声明自己需要一个新鲜的响应，不使用缓存。
+
+no-store
+
+客户端声明自己需要一个新鲜的响应，不使用缓存，也不缓存这个响应。
+
+public
+
+客户端声明这个响应可以被任何中间人（比如代理服务器）缓存。
+
+private
+
+客户端声明这个响应只能被客户端缓存，中间人不能缓存这个响应。
+
+max-age=<seconds>
+
+客户端声明这个响应可以被缓存，缓存时间从发出请求算起，最多缓存<seconds>秒。
+
+s-maxage=<seconds>
+
+客户端声明这个响应可以被缓存，缓存时间从发出请求算起，最多缓存<seconds>秒，覆盖掉max-age=<seconds>。
+
+##协商缓存
+#验证头
+If-None-Match 对应的是ETag
+
+#验证头
+If-Modified-Since 对应的是Last-Modified
+
+#验证头
+Last-Modified
+
+##
+# 注意
+#
+# 1. 客户端声明的缓存时间，只对public和private有效，对no-cache和no-store无效。
+# 2. 客户端声明的缓存时间，只对GET和HEAD请求有效，对POST请求无效。
+# 3. 客户端声明的缓存时间，只对响应有效，对请求无效。
+#
